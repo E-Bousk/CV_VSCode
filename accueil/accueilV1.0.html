@@ -24,29 +24,23 @@
                 <section> <!-- section start -->   
                     <div class="container-fluid">
                         <div class="row">
-                            <button id="burgerMenu">Toggle 'em</button>
-                            <div id="navLogos" class="d-none d-sm-flex flex-column justify-content-between">
+                            <div id="nav_logos" class="d-none d-sm-flex flex-column justify-content-between">
                                 <div>
-                                    <img onclick="toggleMenu()" src="../assets/img/nav_logos.png" alt="nav logo">
+                                    <img src="../assets/img/nav_logos.png" alt="nav logo">
                                 </div>
                                 <div>
                                     <img src="../assets/img/nav_logos2.png" alt="nav logo">
                                 </div>
-                            </div> <!-- "Fin navLogos" -->
-                            <div id="navSize" class="d-none d-md-block col-md-2">
+                            </div> <!-- "Fin nav_logos" -->
+                            <div id="nav_size" class="col-2 order-2 order-lg-1">
                                 <br>
                                 <div class="ms-1 d-flex justify-content-between">
                                     <span>&nbsp; EXPLORER</span>
-                                    <span id="threeDots" onclick="toggleButton()">. . .</span>
+                                    <span id="three_dots">. . .</span>
                                 </div>
-                            <div class="ms-5 d-flex justify-content-center">
-                                <form action="../assets/php/BOUSKSOU_EDDY.php" method="POST" name="formPHP">
-                                    <button id="executeCode" name="executeCode" type="submit" class="submitPHP mt-3 justify-content-center">Executer<br>BOUSKSOU_EDDY.php</button>
-                                </form>
-                            </div>
-                            <br> 
-                            <span><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> OPEN EDITORS</span>
-                            <hr>
+                                <br> 
+                                <span><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> OPEN EDITORS</span>
+                                <hr>
                                 <span><img class="pb-1" src="../assets/img/fb.png" alt="down arrow"> WORKSPACE (WORKSPACE)<br></span>
                                 <span class="ps-2"><img id="allMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow"  onclick="openCloseMenu(allMenu, allMenuArrow)"> CV</span><br>
                                 <div id="allMenu">
@@ -90,102 +84,121 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="ps-3"><img id="imgPHP" class="pb-1 me-1" src="../assets/img/logo_php_elephant.png" alt="logo PHP Elephant">BOUSKSOU_EDDY.php</span><br>
-                            </div><!-- Fin "navSize" -->
-                            <div id="CVenPHP" class="">
+                                <span class="ps-3"><img id="img_php" class="pb-1 me-1" src="../assets/img/logo_php_elephant.png" alt="logo PHP Elephant">BOUSKSOU_EDDY.php</span><br>
+                                <div class="d-flex justify-content-center">
+
+                                <form action="../assets/php/BOUSKSOU_EDDY.php" method="POST" name="formPHP">
+                                    <button id="btn_php" name="btn_php" type="submit" class="submitPHP mt-5 justify-content-center">Executer<br>BOUSKSOU_EDDY.php</button>
+                                </form>
+                               
+                                </div>
+                            </div><!-- Fin "nav_size" -->
+                            <div id="CVenPHP" class="col-8 order-1 order-lg-2">
                                 <section id="codeCV" class="language-markup">
-                                    <pre class="line-numbers"><code class="language-php">&lt;?php<script type="prism-php-markup">
-/**
-* Class CV | fichier BOUSKSOU_EDDY.php
-*
-* Classes souhaitant déboucher sur un stage (non rémunéré) en entreprise du 09 Août au 15 Octobre 2021
-*
-* @package Motivé, rigoureux, curieux, persévérant et passionné
-*
-* @author BOUSKSOU Eddy
-* @copyright 2021-2022 e.bousk@gmail.com
-* @version v1.0
-*/
-class CV {
-    private $_sTitreFront= "
-        Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
+                                    <pre class="line-numbers"><code class="language-php">&lt;?php
+    /**
+    * Class CV | fichier BOUSKSOU_EDDY.php
+    *
+    * Classes souhaitant déboucher sur un stage (non rémunéré) en entreprise du 09 Août au 15 Octobre 2021
+    *
+    * @package Motivé, rigoureux, curieux, persévérant et passionné
+    *
+    * @author BOUSKSOU Eddy
+    * @copyright 2021-2022 e.bousk@gmail.com
+    * @version v1.0
+    */
+    class CV
+    {
+    private $_sTitreFront= "Développer la partie front-end d'une application web ou web mobile en intégrant
+    les recommandations de sécurité <br />";
     private $_sDetailFront= "
-        - Maquette et réalisation graphique de site internet <br>
-        - Réaliser une interface utilisateur web statique et adaptable <br>
-        - Développer une interface utilisateur web dynamique <br>
-        - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br>";
+        - Maquette et réalisation graphique de site internet <br />
+        - Réaliser une interface utilisateur web statique et adaptable <br />
+        - Développer une interface utilisateur web dynamique <br />
+        - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br />
+    ";
 
-    private $_sTitreBack= "
-        Développer la partie back-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
+    private $_sTitreBack= "Développer la partie back-end d'une application web ou web mobile en intégrant
+    les recommandations de sécurité <br />";
     private $_sDetailBack= "
-        - Créer une base de donnée <br>
-        - Développer les composants d'accès aux données <br>
-        - Développer la partie back-end d'une application web ou web mobile <br>
-        - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce <br>";
+        - Créer une base de donnée <br />
+        - Développer les composants d'accès aux données <br />
+        - Développer la partie back-end d'une application web ou web mobile <br />
+        - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce <br />
+    ";
 
-    protected function _afficher_competences() {
-        echo $this->_sTitreFront . " :<br>" . $this->_sDetailFront . "<br>";
-        echo $this->_sTitreBack . " :<br>" . $this->_sDetailBack . "<br>";
+    protected function _afficher_competences()
+    {
+        echo $this->_sTitreFront . $this->_sDetailFront;
+        echo $this->_sTitreBack . $this->_sDetailBack;
     }
 
-    protected function _afficher_experiences_professionnelles($sExperiencesProfesionnelles) {
+    protected function _afficher_experiences_professionnelles($sExperiencesProfesionnelles)
+    {
         switch ($sExperiencesProfesionnelles) {
             case "2014-2020":
-                echo "Responsable rayon fruits & légumes - BIOCOOP Lunel <br>";
+                echo "Responsable rayon fruits & légumes - BIOCOOP Lunel <br />";
                 break;
             case "2009-2010":
-                echo "Animateur atelier informatique École - Marie Curie Lunel <br>";
+                echo "Animateur atelier informatique École - Marie Curie Lunel <br />";
                 break;
             case "2000-2007":
-                echo "Technicien, monteur, réparateur, vendeur informatique - SARL CASH CONVERTERS Montpellier <br>";
+                echo "Technicien, monteur, réparateur, vendeur informatique - SARL CASH CONVERTERS Montpellier <br />";
                 break;
             case "1992-1997":
-                echo "Agent de maîtrise (« leader future expansion ») - Eurodisney SCA Marne-la-vallée <br>";
+                echo "Agent de maîtrise (« leader future expansion ») - Eurodisney SCA Marne-la-vallée <br />";
                 break;
         }
     }
 
-    protected function _afficher_infos_complementaires() {
-        echo "Anglais, Autonomie, Capacité d'adaptation, Réactivité, Sens de l'organisation, Travail en équipe. ";
+    protected function _afficher_infos_complementaires()
+    {
+        echo "Anglais, Autonomie, Capacité d'adaptation, Réactivité, Sens de l'organisation, Travail en équipe. <br />";
     }
-}
+    }
 
-/**
-* Class Competences | fichier BOUSKSOU_EDDY.php
-*/
-class Competences extends CV {
-    public function __construct() {
+    /**
+    * Class Competences | fichier BOUSKSOU_EDDY.php
+    */
+    class Competences extends CV
+    {
+    public function __construct()
+    {
         parent::_afficher_competences();
     }
-}
+    }
 
-/**
-* Class ExperiencesProfesionnelles | fichier BOUSKSOU_EDDY.php
-*/
-class ExperiencesProfesionnelles extends CV {
-    public function __construct($sExperiencesProfesionnelles) {
+    /**
+    * Class ExperiencesProfesionnelles | fichier BOUSKSOU_EDDY.php
+    */
+    class ExperiencesProfesionnelles extends CV
+    {
+    public function __construct($sExperiencesProfesionnelles)
+    {
         parent::_afficher_experiences_professionnelles($sExperiencesProfesionnelles);
     }
-}
+    }
 
-/**
-* Class OtherAssets | fichier BOUSKSOU_EDDY.php
-*/
-class OtherAssets extends CV {
-    public function __construct() {
+    /**
+    * Class OtherAssets | fichier BOUSKSOU_EDDY.php
+    */
+    class OtherAssets extends CV
+    {
+    public function __construct()
+    {
         parent::_afficher_infos_complementaires();
     }
-}
+    }
 
-$oCompetences= new Competences();
+    $oCompetences= new Competences();
 
-$oExperiences1= new ExperiencesProfesionnelles("2014-2020");
-$oExperiences2= new ExperiencesProfesionnelles("2009-2010");
-$oExperiences3= new ExperiencesProfesionnelles("2000-2007");
-$oExperiences4= new ExperiencesProfesionnelles("1992-1997");
+    $oExperiences1= new ExperiencesProfesionnelles("2014-2020");
+    $oExperiences2= new ExperiencesProfesionnelles("2009-2010");
+    $oExperiences3= new ExperiencesProfesionnelles("2000-2007");
+    $oExperiences4= new ExperiencesProfesionnelles("1992-1997");
 
-$oAssets= new OtherAssets();
-?>;                           </script></code></pre>
+    $oAssets= new OtherAssets();
+    ?&gt;                       </code></pre>
                                 </section>
                             </div> <!-- Fin "CV" -->
                         </div><!-- Fin row -->

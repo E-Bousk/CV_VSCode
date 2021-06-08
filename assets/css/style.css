@@ -35,7 +35,7 @@ body {
 /* justify-content: space-evenly; */
 /* } */
 
-#id_pict {
+#idPict {
     border-radius: 2.5rem;
     width: 5rem;
     height: 5rem;
@@ -75,11 +75,11 @@ ul {
 * ---                              ---
 * ------------------------------------ */
 
-#nav_size {
-    width: 316px;
+#navSize {
+    width: max-content;
 }
 
-#three_dots {
+#threeDots {
     margin-top: -5px;
 }
 
@@ -94,7 +94,7 @@ hr {
     
 }
 
-#nav_logos {
+#navLogos {
     height: auto;
     width: 48px;
     padding: 0;
@@ -110,7 +110,7 @@ hr {
     width: 3rem;
 }
 
-#img_php {
+#imgPHP {
     width: 1.3rem;
 }
 
@@ -138,7 +138,6 @@ button:hover {
 * ---                              ---
 * ------------------------------------ */
 
-
 #CVenPHP {
     width: max-content;
 }
@@ -149,7 +148,6 @@ white-space: pre-wrap !important;
 }
 
 
-
 /**
 * ------------------------------------
 * ---                              ---
@@ -158,20 +156,11 @@ white-space: pre-wrap !important;
 * ------------------------------------ */
 
 
-/* .logo_footer2 {
-	width: 100px;
-	height: auto;
-}
-
-.logo_footer1 {
-	width: 50px;
-	height: auto;
-} */
-
 #footer {
     height: 1.5rem;
     background-color: #007acc;
 }
+
 
 /**
 * ------------------------------------
@@ -180,24 +169,37 @@ white-space: pre-wrap !important;
 * ---                              ---
 * ------------------------------------ */
 
-
-  /* Écran dont la résolution en largeur est comprise entre 575 et 990 pixels : */
-  @media screen and (min-width: 575px) and (max-width: 990px) {
-    #CVenPHP {
-        width: calc(100% - 50px);
+/* Écran dont la résolution en largeur est comprise entre 1 et 990 pixels : */
+@media screen and (min-width: 1px) and (max-width: 990px) {
+    #CVenPHP,  #navSize {
+        font-size: x-small;
     }
 }
-  /* Nouvelles règles si la fenêtre fait au plus 993px de large */
-  @media screen and (min-width: 993px) {
+
+/* Écran dont la résolution en largeur est comprise entre 1 et 768 pixels : */
+@media screen and (min-width: 1px) and (max-width: 576px) {
+    #CVenPHP {
+        width: 100%;
+    }
+}
+
+/* Écran dont la résolution en largeur est comprise entre 575 et 768px pixels : */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #CVenPHP {
+        width: calc(100% - 48px);
+    }
+}
+
+/* Écran dont la résolution en largeur est comprise entre 769 et 992 pixels : */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    #CVenPHP {
+        width: calc(100% - 269px);
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 991px de large */
+@media screen and (min-width: 991px) {
     #CVenPHP {
         width:  calc(100% - 370px);
-    }
-}
-
-  /* Écran dont la résolution en largeur est comprise entre 575 et 990 pixels : */
-  @media screen and (min-width: 100px) and (max-width: 990px) {
-    #nav_size {
-       width: max-content;
-
     }
 }
