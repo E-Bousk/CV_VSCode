@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <?php include "../commun/head.html" ?>
+        <title>Page CV</title>
+    </head>
+
+    <body>  
+        <div id="page">
+           
+            <header> <!-- header start -->
+                <?php include "../commun/header.html" ?>
+            </header> <!-- header end -->
+            
+		    <main> <!-- main start -->
+                
+                <nav> <!-- nav start -->
+                    <?php include "../commun/nav.html" ?>
+                </nav> <!-- nav end -->
+                
+                <aside> <!-- aside start -->
+                </aside> <!-- aside end -->
+                
+                <section> <!-- section start -->   
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="nav_logos" class="d-none d-sm-flex flex-column justify-content-between">
+                                <div>
+                                    <img src="../assets/img/nav_logos.png" alt="nav logo">
+                                </div>
+                                <div>
+                                    <img src="../assets/img/nav_logos2.png" alt="nav logo">
+                                </div>
+                            </div> <!-- "Fin nav_logos" -->
+                            <div id="nav_size" class="col-2 order-2 order-lg-1">
+                                <br>
+                                <div class="ms-1 d-flex justify-content-between">
+                                    <span>&nbsp; EXPLORER</span>
+                                    <span id="three_dots">. . .</span>
+                                </div>
+                                <br> 
+                                <span><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> OPEN EDITORS</span>
+                                <hr>
+                                <span><img class="pb-1" src="../assets/img/fb.png" alt="down arrow"> WORKSPACE (WORKSPACE)<br></span>
+                                <span class="ps-2"><img id="allMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow"  onclick="openCloseMenu(allMenu, allMenuArrow)"> CV</span><br>
+                                <div id="allMenu">
+                                    <span class="ps-3"><img id="idMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow" onclick="openCloseMenu(idMenu, idMenuArrow)"> BOUSKSOU EDDY</span><br>
+                                    <div id="idMenu">
+                                        <span class="ps-4 ms-2"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <i class="fas fa-phone me-2 pb-1"></i>09.50.09.01.05</span><br>
+                                        <span class="ps-4 ms-2"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <i class="fas fa-location-arrow me-2 pb-1"></i>34400 LUNEL</span><br>
+                                        <span class="ps-4 ms-2"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <i class="fas fa-at me-2 pb-1"></i>e.bousk@gmail.com</span><br>
+                                        <span class="ps-4 ms-2"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <i class="far fa-calendar-alt me-2 pb-1"></i>Né le 16.09.1970</span><br>
+                                        <span class="ps-4 ms-2"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <i class="fas fa-address-card me-1 pb-1"></i>Permis B, C</span><br>
+                                    </div>
+                                    <span class="ps-3"><img id="formationMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow" onclick="openCloseMenu(formationMenu, formationMenuArrow)"> EN FORMATION PROFESSIONNELLE</span><br>
+                                    <div id="formationMenu">
+                                        <span class="ps-4"><img id="bddMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow" onclick="openCloseMenu(bddMenu, bddMenuArrow)"> Base de données</span><br>
+                                        <div id="bddMenu">
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_jmerise.png" alt="logo JMerise">JMerise</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_mysql.png" alt="logo MySQL">MySQL</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_phpmyadmin.png" alt="logo phpMyAdmin">phpMyAdmin</span><br>
+                                        </div>
+                                        <span class="ps-4"><img id="devMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow" onclick="openCloseMenu(devMenu, devMenuArrow)"> Développement - Programmation</span><br>
+                                        <div id="devMenu">
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_bootstrap-.png" alt="logo Bootstrap">Bootstrap</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_css.png" alt="logo CSS">CSS 3</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_html.png" alt="logo HTML">HTML 5</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_javascript.png" alt="logo Javascript">JavaScript</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_jquery.png" alt="logo JQuery">JQuery</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_php.png" alt="logo PHP">PHP</span><br>
+                                        </div>
+                                        <span class="ps-4"><img id="logiMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow"  onclick="openCloseMenu(logiMenu, logiMenuArrow)"> Logiciels</span><br>
+                                        <div id="logiMenu">
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_balsamiq.png" alt="logo Balsamiq"> Balsamiq</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_filezilla.png" alt="logo Filezilla"> Filezilla</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_libreoffice.png" alt="logo Libre Office"> Libre Office</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_photoshop.png" alt="logo Photoshop"> Photoshop</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_vscode.png" alt="logo Visual Studio Code"> Visual Studio Code</span><br>
+                                        </div>
+                                        <span class="ps-4"><img id="versMenuArrow" class="pb-1" src="../assets/img/fb.png" alt="down arrow"  onclick="openCloseMenu(versMenu, versMenuArrow)"> Versioning</span><br>
+                                        <div id="versMenu">
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_git.png" alt="logo GIT"> GIT</span><br>
+                                            <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/fd.png" alt="right arrow"> <img class="logo me-2 pb-1" src="../assets/img/logo_php.png" alt="logo SourceTree"> SourceTree</span><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="ps-3"><img id="img_php" class="pb-1 me-1" src="../assets/img/logo_php_elephant.png" alt="logo PHP Elephant">BOUSKSOU_EDDY.php</span><br>
+                                <div class="d-flex justify-content-center">
+
+                                <form action="../assets/php/BOUSKSOU_EDDY.php" method="POST" name="formPHP">
+                                    <button id="btn_php" name="btn_php" type="submit" class="submitPHP mt-5 justify-content-center">Executer<br>BOUSKSOU_EDDY.php</button>
+                                </form>
+                               
+                                </div>
+                            </div><!-- Fin "nav_size" -->
+                            <div id="CVenPHP" class="col-8 order-1 order-lg-2">
+                                <section id="codeCV" class="language-markup">
+                                    <pre class="line-numbers"><code class="language-php">&lt;?php
+    /**
+    * Class CV | fichier BOUSKSOU_EDDY.php
+    *
+    * Classes souhaitant déboucher sur un stage (non rémunéré) en entreprise du 09 Août au 15 Octobre 2021
+    *
+    * @package Motivé, rigoureux, curieux, persévérant et passionné
+    *
+    * @author BOUSKSOU Eddy
+    * @copyright 2021-2022 e.bousk@gmail.com
+    * @version v1.0
+    */
+    class CV
+    {
+    private $_sTitreFront= "Développer la partie front-end d'une application web ou web mobile en intégrant
+    les recommandations de sécurité <br />";
+    private $_sDetailFront= "
+        - Maquette et réalisation graphique de site internet <br />
+        - Réaliser une interface utilisateur web statique et adaptable <br />
+        - Développer une interface utilisateur web dynamique <br />
+        - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br />
+    ";
+
+    private $_sTitreBack= "Développer la partie back-end d'une application web ou web mobile en intégrant
+    les recommandations de sécurité <br />";
+    private $_sDetailBack= "
+        - Créer une base de donnée <br />
+        - Développer les composants d'accès aux données <br />
+        - Développer la partie back-end d'une application web ou web mobile <br />
+        - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce <br />
+    ";
+
+    protected function _afficher_competences()
+    {
+        echo $this->_sTitreFront . $this->_sDetailFront;
+        echo $this->_sTitreBack . $this->_sDetailBack;
+    }
+
+    protected function _afficher_experiences_professionnelles($sExperiencesProfesionnelles)
+    {
+        switch ($sExperiencesProfesionnelles) {
+            case "2014-2020":
+                echo "Responsable rayon fruits & légumes - BIOCOOP Lunel <br />";
+                break;
+            case "2009-2010":
+                echo "Animateur atelier informatique École - Marie Curie Lunel <br />";
+                break;
+            case "2000-2007":
+                echo "Technicien, monteur, réparateur, vendeur informatique - SARL CASH CONVERTERS Montpellier <br />";
+                break;
+            case "1992-1997":
+                echo "Agent de maîtrise (« leader future expansion ») - Eurodisney SCA Marne-la-vallée <br />";
+                break;
+        }
+    }
+
+    protected function _afficher_infos_complementaires()
+    {
+        echo "Anglais, Autonomie, Capacité d'adaptation, Réactivité, Sens de l'organisation, Travail en équipe. <br />";
+    }
+    }
+
+    /**
+    * Class Competences | fichier BOUSKSOU_EDDY.php
+    */
+    class Competences extends CV
+    {
+    public function __construct()
+    {
+        parent::_afficher_competences();
+    }
+    }
+
+    /**
+    * Class ExperiencesProfesionnelles | fichier BOUSKSOU_EDDY.php
+    */
+    class ExperiencesProfesionnelles extends CV
+    {
+    public function __construct($sExperiencesProfesionnelles)
+    {
+        parent::_afficher_experiences_professionnelles($sExperiencesProfesionnelles);
+    }
+    }
+
+    /**
+    * Class OtherAssets | fichier BOUSKSOU_EDDY.php
+    */
+    class OtherAssets extends CV
+    {
+    public function __construct()
+    {
+        parent::_afficher_infos_complementaires();
+    }
+    }
+
+    $oCompetences= new Competences();
+
+    $oExperiences1= new ExperiencesProfesionnelles("2014-2020");
+    $oExperiences2= new ExperiencesProfesionnelles("2009-2010");
+    $oExperiences3= new ExperiencesProfesionnelles("2000-2007");
+    $oExperiences4= new ExperiencesProfesionnelles("1992-1997");
+
+    $oAssets= new OtherAssets();
+    ?&gt;                       </code></pre>
+                                </section>
+                            </div> <!-- Fin "CV" -->
+                        </div><!-- Fin row -->
+                    </div><!-- Fin container -->
+                </section> <!-- section end -->
+                
+            </main> <!-- main end -->
+            
+            <footer> <!-- footer start -->
+                <?php include "../commun/footer.html" ?>
+            </footer> <!-- footer end --> 
+                  
+        </div> <!-- Fin "page"-->
+    </body>
+</html>
