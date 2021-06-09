@@ -50,22 +50,39 @@ function toggleMenu() {
 
 
 // to toggle with the 3 dots
-function toggleButton() {
+function toggleDots() {
 	
 	$("#executeCode").toggle("slow");
 }
 
 
-// function myFunction(x) {
-// 	if (x.matches) { // If media query matches
-// 	  document.body.style.backgroundColor = "yellow";
-// 	} else {
-// 	 document.body.style.backgroundColor = "pink";
-// 	}
-//   }
-  
-//   var x = window.matchMedia("(max-width: 700px)")
-//   myFunction(x) // Call listener function at run time
-//   x.addListener(myFunction) // Attach listener function on state changes
+// to toggle with button
+function ToggleButton() {
+	
+	if ($("#navSize").is(":visible")) {
+		$("#navSize").hide();
+		$("#navSize").attr({
+			class: "d-none d-md-block col-md-2"	
+		});
+		$("#ToggleButton").html("Afficher ID");
+		$("#CVenPHP").show();
+		$("#navSize").css("font-size", "x-small");
+		
+	} else {
+		$("#navSize").show();
+		$("#navSize").attr({
+			class: "col-10",
+		});
+		$("#ToggleButton").html("Afficher code CV");
+		$("#CVenPHP").hide();
+		$("#navSize").css("font-size", "larger");
+	}
+}
 
-
+$(window).resize(function() {
+	if ($(this).width() < 991) {
+		$("#navSize").css("font-size", "x-small");
+	} else if ($(this).width() >= 991) {
+		$("#navSize").css("font-size", "medium");
+	}
+  });
