@@ -24,7 +24,7 @@
                 <section> <!-- section start -->   
                     <div class="container-fluid">
                         <div class="row">
-                            <button id="burgerMenu">Toggle 'em</button>
+                            <button id="ToggleButton" onclick="ToggleButton()">Afficher ID</button>
                             <div id="navLogos" class="d-none d-sm-flex flex-column justify-content-between">
                                 <div>
                                     <img onclick="toggleMenu()" src="../assets/img/nav_logos.png" alt="nav logo">
@@ -37,11 +37,11 @@
                                 <br>
                                 <div class="ms-1 d-flex justify-content-between">
                                     <span>&nbsp; EXPLORER</span>
-                                    <span id="threeDots" onclick="toggleButton()">. . .</span>
+                                    <span id="threeDots" onclick="toggleDots()">. . .</span>
                                 </div>
-                            <div class="ms-5 d-flex justify-content-center">
+                            <div class="ms-3 d-flex justify-content-center">
                                 <form action="../assets/php/BOUSKSOU_EDDY.php" method="POST" name="formPHP">
-                                    <button id="executeCode" name="executeCode" type="submit" class="submitPHP mt-3 justify-content-center">Executer<br>BOUSKSOU_EDDY.php</button>
+                                    <button id="executeCode" name="executeCode" type="submit" class="submitPHP mt-3 justify-content-center">BOUSKSOU_EDDY.php</button>
                                 </form>
                             </div>
                             <br> 
@@ -92,7 +92,7 @@
                                 </div>
                                 <span class="ps-3"><img id="imgPHP" class="pb-1 me-1" src="../assets/img/logo_php_elephant.png" alt="logo PHP Elephant">BOUSKSOU_EDDY.php</span><br>
                             </div><!-- Fin "navSize" -->
-                            <div id="CVenPHP" class="">
+                            <div id="CVenPHP">
                                 <section id="codeCV" class="language-markup">
                                     <pre class="line-numbers"><code class="language-php">&lt;?php<script type="prism-php-markup">
 /**
