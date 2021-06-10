@@ -21,15 +21,15 @@ function openCloseMenu(divID, imgID) {
 	if ($(divID).is(":visible")) {
 		$(divID).hide();
 		$(imgID).attr({
-			src: "/./CV/assets/img/fd.png",
-			alt: "right arrow",
+			src: "/./CV/assets/img/arrow_right.png",
+			alt: "arrow right",
 			class: "pb-1"
 		});
 	} else {
 		$(divID).show();
 		$(imgID).attr({
-			src: "/./CV/assets/img/fb.png",
-			alt: "down arrow",
+			src: "/./CV/assets/img/arrow_down.png",
+			alt: "arrow down",
 			class: "pb-1"		
 		});
 	}
