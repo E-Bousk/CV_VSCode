@@ -2,7 +2,7 @@
     /**
     * Class CV | fichier BOUSKSOU_EDDY.php
     *
-    * Classes souhaitant déboucher sur un stage (non rémunéré) en entreprise du 09 Août au 15 Octobre 2021
+    * Classes souhaitant déboucher sur un poste en entreprise
     *
     * @package Motivé, rigoureux, curieux, persévérant et passionné
     *
