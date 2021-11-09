@@ -11,14 +11,6 @@
     * @version v1.0
     */
     class CV {
-        private $_sTitreFront= "
-            Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
-        private $_sDetailFront= "
-            - Maquette et réalisation graphique de site internet <br>
-            - Réaliser une interface utilisateur web statique et adaptable <br>
-            - Développer une interface utilisateur web dynamique <br>
-            - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br>";
-
         private $_sTitreBack= "
             Développer la partie back-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
         private $_sDetailBack= "
@@ -27,9 +19,17 @@
             - Développer la partie back-end d'une application web ou web mobile <br>
             - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce <br>";
 
+        private $_sTitreFront= "
+            Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
+        private $_sDetailFront= "
+            - Maquette et réalisation graphique de site internet <br>
+            - Réaliser une interface utilisateur web statique et adaptable <br>
+            - Développer une interface utilisateur web dynamique <br>
+            - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br>";
+
         protected function _afficher_competences() {
-            echo "<b>" . $this->_sTitreFront . " :</b><br>" . $this->_sDetailFront . "<br>";
             echo "<b>" . $this->_sTitreBack . " :</b><br>" . $this->_sDetailBack . "<br>";
+            echo "<b>" . $this->_sTitreFront . " :</b><br>" . $this->_sDetailFront . "<br>";
         }
 
         protected function _afficher_experiences_professionnelles($sExperiencesProfesionnelles) {

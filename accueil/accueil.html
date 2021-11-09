@@ -65,6 +65,7 @@
                                         <div id="formationMenu">
                                             <span class="ps-4"><img id="bddMenuArrow" class="pb-1" src="../assets/img/arrow_down.png" alt="arrow_down.png" onclick="openCloseMenu(bddMenu, bddMenuArrow)"> Base de données</span><br>
                                             <div id="bddMenu">
+                                                <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_doctrine.png" alt="logo Doctrine">Doctrine</span><br>
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_jmerise.png" alt="logo JMerise">JMerise</span><br>
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_mysql.png" alt="logo MySQL">MySQL</span><br>
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_phpmyadmin.png" alt="logo phpMyAdmin">phpMyAdmin</span><br>
@@ -78,6 +79,7 @@
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_jquery.png" alt="logo JQuery">JQuery</span><br>
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_php.png" alt="logo PHP">PHP</span><br>
                                                 <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_symfony.svg" alt="logo Symfony">Symfony</span><br>
+                                                <span class="ps-4 ms-3"><img class="pb-1" src="../assets/img/arrow_right.png" alt="arrow right"> <img class="logo me-2 pb-1" src="../assets/img/logo_twig.png" alt="logo Twig">Twig</span><br>
                                             </div>
                                             <span class="ps-4"><img id="logiMenuArrow" class="pb-1" src="../assets/img/arrow_down.png" alt="arrow_down.png"  onclick="openCloseMenu(logiMenu, logiMenuArrow)"> Logiciels</span><br>
                                             <div id="logiMenu">
@@ -112,14 +114,6 @@
 * @version v1.0
 */
 class CV {
-    private $_sTitreFront= "
-        Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
-    private $_sDetailFront= "
-        - Maquette et réalisation graphique de site internet <br>
-        - Réaliser une interface utilisateur web statique et adaptable <br>
-        - Développer une interface utilisateur web dynamique <br>
-        - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br>";
-
     private $_sTitreBack= "
         Développer la partie back-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
     private $_sDetailBack= "
@@ -128,9 +122,17 @@ class CV {
         - Développer la partie back-end d'une application web ou web mobile <br>
         - Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce <br>";
 
+    private $_sTitreFront= "
+        Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité ";
+    private $_sDetailFront= "
+        - Maquette et réalisation graphique de site internet <br>
+        - Réaliser une interface utilisateur web statique et adaptable <br>
+        - Développer une interface utilisateur web dynamique <br>
+        - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce <br>";
+
     protected function _afficher_competences() {
-        echo $this->_sTitreFront . " :<br>" . $this->_sDetailFront . "<br>";
         echo $this->_sTitreBack . " :<br>" . $this->_sDetailBack . "<br>";
+        echo $this->_sTitreFront . " :<br>" . $this->_sDetailFront . "<br>";
     }
 
     protected function _afficher_experiences_professionnelles($sExperiencesProfesionnelles) {
@@ -193,8 +195,8 @@ $oAssets= new OtherAssets();
 ?>;                           </script></code></pre>
                                 </section>
                             </div> <!-- Fin "CV" -->
-                        </div><!-- Fin row -->
-                    </div><!-- Fin container -->
+                        </div> <!-- Fin row -->
+                    </div> <!-- Fin container -->
                 </section> <!-- section end -->
                 
             </main> <!-- main end -->
